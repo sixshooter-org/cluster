@@ -195,9 +195,9 @@ spec:
             dest:
               accessModes:
                 - ReadWriteOnce
-              enabled: true
+              enabled: false
             src:
-              enabled: true
+              enabled: false
        enabled: true
        targetSelector:
          main:
@@ -215,9 +215,9 @@ spec:
             dest:
               accessModes:
                 - ReadWriteOnce
-              enabled: true
+              enabled: false
             src:
-              enabled: true
+              enabled: false
        enabled: true
        targetSelector:
          mcbackup:
