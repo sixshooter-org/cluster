@@ -91,10 +91,10 @@ spec:
                ENABLE_QUERY: "true"
                OVERRIDE_SERVER_PROPERTIES: true
                VERSION: "1.20.1"
-               TYPE: "AUTO_CURSEFORGE"
-               # FORGEVERSION: "47.3.7"
-               CURSEFORGE_FILES: "sixnet"
-               CF_MODPACK_ZIP: "/customdata/sixnet-2.0.zip"
+               TYPE: "CURSEFORGE"
+               FORGEVERSION: "47.3.7"
+               # CURSEFORGE_FILES: "sixnet"
+               CF_SERVER_MOD: "/customdata/sixnet-2.0.zip"
                DIFFICULTY: easy
                MAX_PLAYERS: 20
                MAX_WORLD_SIZE: 10000
