@@ -90,8 +90,10 @@ spec:
              env:
                ENABLE_QUERY: "true"
                OVERRIDE_SERVER_PROPERTIES: true
-               VERSION: "LATEST"
-               TYPE: "VANILLA"
+               VERSION: "1.20.1"
+               TYPE: "AUTO_CURSEFORGE"
+               # FORGEVERSION: "47.3.7"
+               CURSEFORGE_FILES: "1093765"
                DIFFICULTY: easy
                MAX_PLAYERS: 20
                MAX_WORLD_SIZE: 10000
@@ -121,7 +123,6 @@ spec:
                # QUILT_LAUNCHER: ""
                # QUILT_LAUNCHER_URL: ""
                # PUFFERFISH_BUILD: "lastSuccessfulBuild"
-               # FORGEVERSION: ""
                # FORGE_INSTALLER: ""
                # FORGE_INSTALLER_URL: ""
                # FABRIC_LOADER_VERSION: ""
