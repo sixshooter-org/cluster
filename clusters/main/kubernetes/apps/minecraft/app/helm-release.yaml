@@ -90,9 +90,9 @@ spec:
              env:
                ENABLE_QUERY: "true"
                OVERRIDE_SERVER_PROPERTIES: true
-               VERSION: "1.20.1"
+               VERSION: "1.20.6"
                TYPE: "AUTO_CURSEFORGE"
-               # FORGEVERSION: "47.3.7"
+               FORGEVERSION: "50.1.14"
                CF_SLUG: "custom"
                CF_MODPACK_ZIP: "/customdata/sixnet-2.0.zip"
                DIFFICULTY: easy
