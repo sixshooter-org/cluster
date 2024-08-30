@@ -94,7 +94,7 @@ spec:
                TYPE: "AUTO_CURSEFORGE"
                # FORGEVERSION: "47.3.7"
                CF_SLUG: "sixnet"
-               #GENERIC_PACK: "/customdata/sixnet-2.0.zip"
+               CF_MODPACK_ZIP: "/customdata/sixnet-2.0.zip"
                DIFFICULTY: easy
                MAX_PLAYERS: 20
                MAX_WORLD_SIZE: 10000
