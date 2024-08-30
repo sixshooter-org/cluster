@@ -61,7 +61,7 @@ spec:
            port: 25575
     
     mcbackup:
-     enabled: true
+     enabled: false
      initial_delay: 2m
      backup_interval: 24h
      player_online_check_interval: 5m
