@@ -161,7 +161,7 @@ spec:
                # USE_SIMD_FLAGS: false
                # JVM_OPTS: ""
                # JVM_XX_OPTS: ""
-               CF_API_KEY: "b23eb4cb-1662-4d12-a8f2-79789edb1efb"
+               CF_API_KEY: '$2a$10$FguGySPgyiDk7bstzl9SjepcomyW7IByJO1VGLWJXJttO2whBXDWa'
                # CF_PAGE_URL
                # CF_SLUG
                # CF_EXCLUDE_INCLUDE_FILE
