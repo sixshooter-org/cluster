@@ -1,0 +1,74 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: minecraft-serverdata
+  namespace: minecraft
+spec:
+  storageClassName: minecraft-serverdata
+  capacity:
+    storage: 1Mi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
+    server: 192.168.10.21
+    path: "/mnt/tank/appdata/minecraft"
+  mountOptions:
+    - nfsvers=4
+    - tcp
+    - intr
+    - hard
+    - noatime
+    - nodiratime
+    - nolock
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: minecraft-serverdata-pvc
+  namespace: minecraft
+spec:
+  storageClassName: minecraft-serverdata
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Mi
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: minecraft-backups
+  namespace: minecraft
+spec:
+  storageClassName: minecraft-backups
+  capacity:
+    storage: 1Mi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
+    server: 192.168.10.21
+    path: "/mnt/tank/backups/minecraft"
+  mountOptions:
+    - nfsvers=4
+    - tcp
+    - intr
+    - hard
+    - noatime
+    - nodiratime
+    - nolock
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: minecraft-backups-pvc
+  namespace: minecraft
+spec:
+  storageClassName: minecraft-backups
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Mi
