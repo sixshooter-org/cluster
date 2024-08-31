@@ -205,7 +205,7 @@ spec:
          mcbackup:
            mcbackup:
              mountPath: /backups
-     resources:
+    resources:
        limits:
          cpu: 10000m
          memory: 16Gi
