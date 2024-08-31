@@ -86,7 +86,7 @@ spec:
                FORGEVERSION: "forge-47.2.0"
                CF_SLUG: "custom"
                CF_MODPACK_ZIP: "/customdata/SixShooter-3.4.zip"
-               DIFFICULTY: easy
+               DIFFICULTY: hard
                MAX_PLAYERS: 20
                MAX_WORLD_SIZE: 1000000
                ALLOW_NETHER: true
