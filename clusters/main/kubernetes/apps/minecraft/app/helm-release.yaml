@@ -88,27 +88,32 @@ spec:
                CF_MODPACK_ZIP: "/customdata/SixShooter-3.4.zip"
                DIFFICULTY: easy
                MAX_PLAYERS: 20
-               MAX_WORLD_SIZE: 10000
+               MAX_WORLD_SIZE: 1000000
                ALLOW_NETHER: true
                ANNOUNCE_PLAYER_ACHIEVEMENTS: true
                ENABLE_COMMAND_BLOCK: false
-               FORCE_GAMEMODE: false
+               FORCE_GAMEMODE: true
                GENERATE_STRUCTURES: true
                HARDCORE: false
-               MAX_BUILD_HEIGHT: 256
-               MAX_TICK_TIME: 60000
+               MAX_BUILD_HEIGHT: 300
+               MAX_TICK_TIME: 90000
                SPAWN_ANIMALS: true
                SPAWN_MONSTERS: true
                SPAWN_NPCS: true
                VIEW_DISTANCE: 32
+               SPAWN_PROTECTION: 64
                MODE: survival
                MOTD: "Welcome to Six-Shooter Minecraft"
                PVP: false
                LEVEL_TYPE: DEFAULT
                LEVEL: world
                ONLINE_MODE: true
-               MEMORY: 12228M
+               MAX_MEMORY: 12228M
+               INIT_MEMORY: 4096M
+               JVM_XX_OPTS: "-XX:MaxRAMPercentage=75"
                RCON_PASSWORD:  ${MC_RCON_PASS}
+               BROADCAST_CONSOLE_TO_OPS: true
+               USE_AIKAR_FLAGS: true
                # PACKWIZ_URL: ""
                # CUSTOM_SERVER: ""
                # QUILT_LOADER_VERSION: ""
