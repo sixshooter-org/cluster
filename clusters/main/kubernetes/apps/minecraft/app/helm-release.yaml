@@ -100,14 +100,14 @@ spec:
                SPAWN_ANIMALS: true
                SPAWN_MONSTERS: true
                SPAWN_NPCS: true
-               VIEW_DISTANCE: 16
+               VIEW_DISTANCE: 32
                MODE: survival
                MOTD: "Welcome to Six-Shooter Minecraft"
                PVP: false
                LEVEL_TYPE: DEFAULT
                LEVEL: world
                ONLINE_MODE: true
-               MEMORY: 2048M
+               MEMORY: 4096M
                RCON_PASSWORD:  ${MC_RCON_PASS}
                # PACKWIZ_URL: ""
                # CUSTOM_SERVER: ""
@@ -143,7 +143,7 @@ spec:
                # WHITELIST: ""
                # OPS: ""
                # ICON: ""
-               # SEED: ""
+               SEED: "-1412583731547517931"
                # GENERATOR_SETTINGS: ""
                # WORLD: ""
                # FORCE_REDOWNLOAD: false
@@ -200,5 +200,12 @@ spec:
          mcbackup:
            mcbackup:
              mountPath: /backups
+     resources:
+       limits:
+         cpu: 10000m
+         memory: 16Gi
+       requests:
+         cpu: 1000m
+         memory: 4Gi
 
 
