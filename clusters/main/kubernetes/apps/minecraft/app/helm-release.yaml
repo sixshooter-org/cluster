@@ -10,7 +10,7 @@ spec:
   chart:
     spec:
       chart: minecraft-java
-      version: 10.1.9
+      version: 11.0.1
       sourceRef:
         kind: HelmRepository
         name: truecharts
@@ -61,15 +61,6 @@ spec:
            port: 25575
     
     mcbackup:
-     enabled: false
-     initial_delay: 2m
-     backup_interval: 24h
-     player_online_check_interval: 5m
-     prune_backups_days: 7
-     pause_if_no_players: false
-     link_latest: false
-     # values gzip,bzip2,zstd
-     tar_compress_method: gzip
      # White spaced separated list
      zstd_params:
        - --long=25
@@ -161,7 +152,7 @@ spec:
                # USE_SIMD_FLAGS: false
                # JVM_OPTS: ""
                # JVM_XX_OPTS: ""
-               CF_API_KEY: '$2a$10$FguGySPgyiDk7bstzl9SjepcomyW7IByJO1VGLWJXJttO2whBXDWa'
+               CF_API_KEY: ${MINECRAFT_CF_API_KEY}
                # CF_PAGE_URL
                # CF_SLUG
                # CF_EXCLUDE_INCLUDE_FILE
@@ -171,22 +162,8 @@ spec:
                # CF_OVERRIDES_SKIP_EXISTING
                # CF_PARALLEL_DOWNLOADS
                # CF_SET_LEVEL_FROM
-     mcbackup:
-       enabled: true
-       type: Deployment
-       podSpec:
-         containers:
            mcbackup:
-             primary: true
-             enabled: true
-             imageSelector: mcBackupImage
-             probes:
-               liveness:
-                 enabled: false
-               readiness:
-                 enabled: false
-               startup:
-                 enabled: false
+             enabled: false
     
     persistence:
      data:
