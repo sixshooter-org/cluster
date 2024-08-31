@@ -77,7 +77,7 @@ spec:
        podSpec:
          containers:
            main:
-             imageSelector: j17Image
+             imageSelector: j17alpineImage
              env:
                ENABLE_QUERY: "true"
                OVERRIDE_SERVER_PROPERTIES: true
