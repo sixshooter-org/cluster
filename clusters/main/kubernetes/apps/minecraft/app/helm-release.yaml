@@ -152,7 +152,7 @@ spec:
                # USE_SIMD_FLAGS: false
                # JVM_OPTS: ""
                # JVM_XX_OPTS: ""
-               CF_API_KEY: ${MINECRAFT_CF_API_KEY}
+               CF_API_KEY: "$2a$10$/${MINECRAFT_CF_API_KEY}"
                # CF_PAGE_URL
                # CF_SLUG
                # CF_EXCLUDE_INCLUDE_FILE
