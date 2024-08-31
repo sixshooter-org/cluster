@@ -179,7 +179,7 @@ spec:
             dest:
               accessModes:
                 - ReadWriteOnce
-              enabled: false
+              enabled: true
             src:
               enabled: true
        enabled: true
