@@ -107,7 +107,7 @@ spec:
                LEVEL_TYPE: DEFAULT
                LEVEL: world
                ONLINE_MODE: true
-               MEMORY: 4096M
+               MEMORY: 12228M
                RCON_PASSWORD:  ${MC_RCON_PASS}
                # PACKWIZ_URL: ""
                # CUSTOM_SERVER: ""
