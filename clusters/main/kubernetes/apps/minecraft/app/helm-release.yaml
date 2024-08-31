@@ -114,6 +114,7 @@ spec:
                RCON_PASSWORD:  ${MC_RCON_PASS}
                BROADCAST_CONSOLE_TO_OPS: true
                USE_AIKAR_FLAGS: true
+               OPS: "PrivatePuffin"
                # PACKWIZ_URL: ""
                # CUSTOM_SERVER: ""
                # QUILT_LOADER_VERSION: ""
