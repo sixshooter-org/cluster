@@ -115,6 +115,7 @@ spec:
                BROADCAST_CONSOLE_TO_OPS: true
                USE_AIKAR_FLAGS: true
                OPS: "99093856-888c-49e5-b7ea-6849c4012469"
+               EXISTING_OPS_FILE: "SYNCHRONIZE"
                # PACKWIZ_URL: ""
                # CUSTOM_SERVER: ""
                # QUILT_LOADER_VERSION: ""
