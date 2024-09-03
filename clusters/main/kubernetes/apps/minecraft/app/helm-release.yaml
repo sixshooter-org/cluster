@@ -83,9 +83,9 @@ spec:
                OVERRIDE_SERVER_PROPERTIES: true
                VERSION: "1.20.1"
                TYPE: "AUTO_CURSEFORGE"
-               FORGEVERSION: "forge-47.2.0"
+               FORGEVERSION: "forge-47.3.7"
                CF_SLUG: "custom"
-               CF_MODPACK_ZIP: "/customdata/SixShooter-3.4.zip"
+               CF_MODPACK_ZIP: "/customdata/SixShooter-4.0.zip"
                DIFFICULTY: hard
                MAX_PLAYERS: 20
                MAX_WORLD_SIZE: 1000000
