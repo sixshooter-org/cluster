@@ -245,8 +245,8 @@ spec:
             middlewares:
               - name: bouncer
                 namespace: traefik
-              - name: auth
-                namespace: traefik
+              #- name: auth
+              # namespace: traefik
             entrypoints:
               - websecure
             enableFixedMiddlewares: true
