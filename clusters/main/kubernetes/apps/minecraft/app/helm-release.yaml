@@ -232,7 +232,7 @@ spec:
         targetSelector:
           dynmap: dynmap
         hosts:
-          -  host: dynmap.sixcraft.net
+          -  host: dynmap.sixcraft.org
              paths:
                 - path: /
                   pathType: Prefix
