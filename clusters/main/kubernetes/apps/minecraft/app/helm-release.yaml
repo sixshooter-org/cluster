@@ -79,7 +79,8 @@ spec:
        - "cache"
        - "logs"
        - "*.tmp"
-    
+    podOptions:
+      terminationGracePeriodSeconds: 120
     workload:
      main:
        podSpec:
@@ -101,6 +102,7 @@ spec:
                ANNOUNCE_PLAYER_ACHIEVEMENTS: true
                ENABLE_COMMAND_BLOCK: false
                FORCE_GAMEMODE: true
+               STOP_SERVER_ANNOUNCE_DELAY: 60
                GENERATE_STRUCTURES: true
                HARDCORE: false
                MAX_BUILD_HEIGHT: 300
