@@ -92,7 +92,7 @@ spec:
                VERSION: "1.20.1"
                TYPE: "AUTO_CURSEFORGE"
                FORGEVERSION: "forge-47.3.7"
-               CF_SLUG: "custom"
+               CF_SLUG: "sixcraft"
                CF_MODPACK_ZIP: "/customdata/SixShooter-4.0.zip"
                DIFFICULTY: hard
                MAX_PLAYERS: 20
