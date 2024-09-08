@@ -205,13 +205,13 @@ spec:
            mcbackup:
              mountPath: /data
              readOnly: true
-     customdata:
-       existingClaim: minecraft-serverdata-pvc
-       enabled: true
-       targetSelector:
-         main:
-           main:
-             mountPath: /customdata
+     #customdata:
+     #  existingClaim: minecraft-serverdata-pvc
+     #  enabled: true
+     #  targetSelector:
+     #    main:
+     #      main:
+     #        mountPath: /customdata
      backups:
        existingClaim: minecraft-backups-pvc
        enabled: true
