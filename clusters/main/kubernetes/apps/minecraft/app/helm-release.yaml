@@ -205,6 +205,13 @@ spec:
            mcbackup:
              mountPath: /data
              readOnly: true
+     dynmap:
+       enabled: true
+       storageClass: ceph-nvme2
+       targetSelector:
+         main:
+           main:
+             mountPath: /data/dynmap/web
      #customdata:
      #  existingClaim: minecraft-serverdata-pvc
      #  enabled: true
@@ -213,8 +220,18 @@ spec:
      #      main:
      #        mountPath: /customdata
      backups:
-       existingClaim: minecraft-backups-pvc
+       volsync:
+          - name: b2
+            type: restic
+            credentials: s3
+            dest:
+              accessModes:
+                - ReadWriteOnce
+              enabled: true
+            src:
+              enabled: true
        enabled: true
+       storageClass: ceph-nvme2
        targetSelector:
          mcbackup:
            mcbackup:
