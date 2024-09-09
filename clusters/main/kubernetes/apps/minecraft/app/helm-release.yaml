@@ -277,7 +277,7 @@ spec:
 
     cnpg:
       main:
-        enabled: true
+        enabled: false
         primary: true
         # -- Puts the cnpg cluster in hibernation mode
         hibernate: false
