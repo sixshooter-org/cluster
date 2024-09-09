@@ -306,10 +306,6 @@ spec:
           walStorage:
             storageClass: “ceph-nvme2”
 
-          # Method to follow to upgrade the primary server during a rolling update procedure, after all replicas have been
-          # successfully updated. It can be switchover (default) or in-place (restart).
-          primaryUpdateMethod: restart
-
 
           # The instances' log level, one of the following values: error, warning, info (default), debug, trace
           logLevel: info
