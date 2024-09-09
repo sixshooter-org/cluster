@@ -111,7 +111,7 @@ spec:
                SPAWN_MONSTERS: true
                SPAWN_NPCS: true
                VIEW_DISTANCE: 32
-               SPAWN_PROTECTION: 32
+               SPAWN_PROTECTION: 5
                MODE: survival
                MOTD: "Welcome to Six-Shooter Minecraft"
                PVP: false
