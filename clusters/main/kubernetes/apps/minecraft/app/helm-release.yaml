@@ -300,12 +300,10 @@ spec:
           # # -- storage size for the data pvc's
           # # Follows the same spec as .Values.Persistence type=PVC
           storage:
-            size: "256Gi"
             storageClass: “ceph-nvme2”
           # # -- storage size for the wal pvc's
           # # Follows the same spec as .Values.Persistence type=PVC
           walStorage:
-            size: "256Gi"
             storageClass: “ceph-nvme2”
 
           # Method to follow to upgrade the primary server during a rolling update procedure, after all replicas have been
