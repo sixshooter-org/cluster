@@ -316,9 +316,9 @@ spec:
           # The instances' log level, one of the following values: error, warning, info (default), debug, trace
           logLevel: info
 
-            backups:
-              enabled: true
-              credentials: s3
-            recovery:
-              method: object_store
-              credentials: s3
+        backups:
+          enabled: true
+          credentials: s3
+        recovery:
+          method: object_store
+          credentials: s3
