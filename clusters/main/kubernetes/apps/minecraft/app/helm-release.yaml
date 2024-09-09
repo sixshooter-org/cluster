@@ -275,3 +275,50 @@ spec:
               - name: chain-basic
                 namespace: ""
 
+    cnpg:
+      main:
+        enabled: true
+        primary: true
+        # -- Puts the cnpg cluster in hibernation mode
+        hibernate: false
+        pgVersion: 16
+        mode: standalone
+
+        # Database details
+        database: “dynmap”
+        user: “dynmap
+        password: “minecraftdynmapPASSWORD"
+
+        # Database cluster configuration
+        cluster:
+
+          # Number of instances
+          instances: 1
+
+          # set to true on single-node clusters to allow PVCs to be kept on instance restart
+          singleNode: true
+          # # -- storage size for the data pvc's
+          # # Follows the same spec as .Values.Persistence type=PVC
+          storage:
+            size: "256Gi"
+            storageClass: “ceph-nvme-2”
+          # # -- storage size for the wal pvc's
+          # # Follows the same spec as .Values.Persistence type=PVC
+          walStorage:
+            size: "256Gi"
+            storageClass: “ceph-nvme-2”
+
+          # Method to follow to upgrade the primary server during a rolling update procedure, after all replicas have been
+          # successfully updated. It can be switchover (default) or in-place (restart).
+          primaryUpdateMethod: in-place
+
+
+          # The instances' log level, one of the following values: error, warning, info (default), debug, trace
+          logLevel: info
+
+            backups:
+              enabled: true
+              credentials: s3
+            recovery:
+              method: object_store
+              credentials: s3
