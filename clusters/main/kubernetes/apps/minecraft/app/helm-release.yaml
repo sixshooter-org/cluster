@@ -197,6 +197,7 @@ spec:
             src:
               enabled: true
        enabled: true
+       size: 500Gi
        targetSelector:
          main:
            main:
@@ -232,6 +233,7 @@ spec:
               enabled: true
        enabled: true
        storageClass: ceph-nvme2
+       size: 250Gi
        targetSelector:
          mcbackup:
            mcbackup:
