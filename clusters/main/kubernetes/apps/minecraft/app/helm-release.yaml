@@ -209,6 +209,7 @@ spec:
      dynmap:
        enabled: true
        storageClass: ceph-nvme2
+       size: 250Gi
        targetSelector:
          main:
            main:
